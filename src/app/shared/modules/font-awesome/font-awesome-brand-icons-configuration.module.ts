@@ -1,6 +1,14 @@
 import { NgModule } from "@angular/core";
 import { FaIconLibrary } from "@fortawesome/angular-fontawesome";
-import { faBitbucket, faGithub, faGitlab, faMicrosoft } from "@fortawesome/free-brands-svg-icons";
+import {
+  faBitbucket,
+  faConfluence,
+  faGithub,
+  faGitlab, faJira,
+  faMicrosoft,
+  faSlack,
+  faTrello
+} from "@fortawesome/free-brands-svg-icons";
 
 @NgModule()
 export class FontAwesomeBrandIconsConfigurationModule {
@@ -9,7 +17,11 @@ export class FontAwesomeBrandIconsConfigurationModule {
       faGithub,
       faGitlab,
       faBitbucket,
-      faMicrosoft
+      faMicrosoft,
+      faTrello,
+      faConfluence,
+      faSlack,
+      faJira
     );
   }
 }

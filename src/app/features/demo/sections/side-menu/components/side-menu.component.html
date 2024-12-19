@@ -1,9 +1,9 @@
 <div class="flex w-full">
   <!-- Empty space for the left half -->
-  <div class="w-1/2"></div>
+  <div class="w-1/4"></div>
 
   <!-- Side menu on the right half -->
-  <div class="w-1/2 flex flex-col h-screen p-4">
+  <div class="w-3/4 min-w-[250px] flex flex-col h-screen p-4">
     <!-- Fixed header -->
     <div>
       <h2 class="text-xl font-bold mb-4 text-green-600">Geekle AI Demo</h2>
@@ -40,8 +40,6 @@
                 }
                 <span class="font-semibold text-sm text-gray-800 flex-grow">
                   {{ item.name }}
-                  <ng-template [ngTemplateOutlet]="approved" [ngTemplateOutletContext]="{menuItem: item}" />
-
                 </span>
               </div>
               @if (item.children) {
